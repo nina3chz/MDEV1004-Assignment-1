@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon Database</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    </head>
+
+    <body>
+
+        <div class="example">
+            <h1>Pokemon Database</h1>
+
+            <div class="container">
+                <div class="pokemon_list row px-5 mt-5 mb-5">
+                    <div class="col-md-4">
+                        <a href="#" class="pokemon" onClick="clickPokemon('Dratini')">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/147.png" />
+                            <b>Dratini</b>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="pokemon" onClick="clickPokemon('Rowlet')">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/722.png" />
+                            <b>Rowlet</b>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="pokemon" onClick="clickPokemon('Togepi')">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/175.png" />
+                            <b>Togepi</b>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="pokemon" onClick="clickPokemon('Croagunk')">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/453.png" />
+                            <b>Croagunk</b>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="pokemon" onClick="clickPokemon('Budew')">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/406.png" />
+                            <b>Budew</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row px-5 mt-5 mb-5">
+                    <div class="col-md-5">
+                        <h2>Specs</h2>
+
+                        <ul>
+                            <li><b>Name:</b> <span id="pokemon_name"></span></li>
+                            <li><b>Abilities:</b> <span id="pokemon_abilities"></span></li>
+                            <li><b>Height:</b> <span id="pokemon_height"></span></li>
+                            <li><b>Base Experience:</b> <span id="pokemon_exp"></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <h2>Abilities</h2>
+
+                        <ul>
+                            <li><b>Ability Name:</b> <span id="ability_name"></span></li>
+                            <li><b>Ability Effect:</b> <span id="ability_effect"></span></li>
+                            <li><b>Short Effect:</b> <span id="ability_short"></span></li>
+                            <li><b>Flavour Text:</b> <span id="ability_text"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row px-5 mt-5 mb-5">
+                    <div class="col-md-8">
+                        <p><b>Endpoint:</b> <span id="endpoint"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="api_scripts.js"></script>
+    </body>
+</html>

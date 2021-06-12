@@ -1,0 +1,54 @@
+
+/* html font family: nunito, sans-serif */
+html {
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #022B3A;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* just used to color the background of the page */
+.example {
+    background-color: #022B3A;
+}
+
+h1, h2, h3{
+    color: #FFAF87;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+p, ul {
+    text-align:justify;
+    color: #E1E5F2;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+b {
+    color: #36B9D3;
+}
+
+.container {
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: #05394c;
+    padding: 10px;
+}
+
+.toggler {
+    color: #E1E5F2;
+}
+
+button .pokemon {
+    background-color: transparent;
+    border: 3px solid #1F7A8C;
+}
